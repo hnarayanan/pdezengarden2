@@ -12,7 +12,7 @@ angular.module('pdezengardenApp', [
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/pdes/', {
+      .when('/pdes', {
         templateUrl: 'views/pdes.html',
         controller: 'PdesCtrl'
       })
