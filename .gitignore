@@ -8,5 +8,6 @@ dist
 .tmp
 .sass-cache
 app/bower_components
+api/db.sqlite3
 
 /venv
