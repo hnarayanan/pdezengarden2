@@ -3,7 +3,7 @@ from rest_framework import serializers
 from .models import PDE
 
 
-class PDESerializer(serializers.HyperLinkedModelSerializer):
+class PDESerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = PDE

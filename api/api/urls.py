@@ -2,10 +2,11 @@ from django.conf.urls import patterns, url, include
 
 from rest_framework.routers import DefaultRouter
 
-from .views import PDEViewSet
+from pdes.views import PDEViewSet
+
 
 router = DefaultRouter()
-router.register(r'pdes', views.PDEViewSet)
+router.register(r'pdes', PDEViewSet)
 
 urlpatterns = patterns('',
     url(r'^', include(router.urls)),
