@@ -8,10 +8,6 @@ angular.module('pdezengardenApp', [
 ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
@@ -21,6 +17,6 @@ angular.module('pdezengardenApp', [
         controller: 'PdesCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/pdes'
       });
   });

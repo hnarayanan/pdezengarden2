@@ -12,7 +12,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -25,7 +25,27 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="container">
+
+      <div class="header">
+	<ul class="nav nav-pills pull-right">
+	  <li><a ng-href="#/pdes">Home</a></li>
+	  <li><a ng-href="#/about">About</a></li>
+	</ul>
+	<h3><a href="#/pdes">PDE Zen Garden</a></h3>
+      </div>
+
+      <div class="content" ng-view="">
+      </div>
+
+      <div class="footer">
+	<p>
+	  Inspired by a <a href="http://people.maths.ox.ac.uk/trefethen/pdectb.html">wonderful little book</a> and powered by <a href="https://thinkbot.net/">thinkbot</a>.
+	  <span class="pull-right">Built with ♥ by <a href="http://harishnarayanan.org/">Harish Narayanan</a>.</span>
+	</p>
+      </div>
+
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
