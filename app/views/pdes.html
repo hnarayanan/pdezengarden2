@@ -1,7 +1,7 @@
 <div class="row">
   <div ng-repeat="pde in pdes" class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <a href="#/pdes/{{ pde.id }}"><img ng-src="{{ pde.thumbnail }}" alt="{{ pde.name }}" class="img-responsive"></a>
+      <a href="#/pdes/{{ pde.slug }}"><img ng-src="{{ pde.thumbnail }}" alt="{{ pde.name }}" class="img-responsive"></a>
       <div class="caption">
         <h3>{{ pde.name }}</h3>
         <p>{{ pde.tagline }}</p>
