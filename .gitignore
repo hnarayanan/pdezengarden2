@@ -9,5 +9,6 @@ dist
 .sass-cache
 app/bower_components
 api/db.sqlite3
+api/media
 
 /venv
