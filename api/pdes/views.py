@@ -1,3 +1,17 @@
-from django.shortcuts import render
+from rest_framework import permissions, renderers, viewsets
+from rest_framework.response import Response
+from rest_framework.decorators import link
 
-# Create your views here.
+from .models import PDE
+from .serializers import PDESerializer
+
+
+class PDEViewSet(viewsets.ModelViewSet):
+    """
+    This viewset automatically provides `list`, `create`, `retrieve`,
+    `update` and `destroy` actions.
+    """
+
+    queryset = PDE.objects.all()
+    serializer_class = PDESerializer
+    filter_fields = ('name', 'tagline')
