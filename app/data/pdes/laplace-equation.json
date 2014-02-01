@@ -1,0 +1,7 @@
+{
+    "id": "laplace-equation",
+    "name": "Laplace Equation",
+    "thumbnail": "http://placehold.it/350x250/428bca/fff",
+    "tagline": "The basis of potential theory",
+    "description": "The Laplace equation is so important that functions that satisfy it have a special name: they are said to be <em>harmonic</em>. The equation is ..."
+}

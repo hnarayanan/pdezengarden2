@@ -1,0 +1,38 @@
+[
+    {
+	"id": "laplace-equation",
+	"name": "Laplace Equation",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "The basis of potential theory"
+    },
+    {
+	"id": "heat-equation",
+	"name": "Heat Equation",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "Diffusion and smoothing"
+    },
+    {
+	"id": "backward-heat-equation",
+	"name": "Backward Heat Equation",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "Ill-posed problems and regularisation"
+    },
+    {
+	"id": "const-coeff-linear-equations",
+	"name": "Constant Coefficient Linear Equations",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "Fourier analysis and boundedness"
+    },
+    {
+	"id": "biharmonic-equations",
+	"name": "Biharmonic Equations",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "Solid mechanics and creeping flow"
+    },
+    {
+	"id": "minimal-surface-equation",
+	"name": "Minimal Surface Equation",
+	"thumbnail": "http://placehold.it/350x250/428bca/fff",
+	"tagline": "Mathematisation of a soap film"
+    }
+]
