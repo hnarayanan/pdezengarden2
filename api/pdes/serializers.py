@@ -5,6 +5,8 @@ from .models import PDE
 
 class PDESerializer(serializers.HyperlinkedModelSerializer):
 
+    thumbnail = serializers.CharField(source='thumbnail_url')
+
     class Meta:
         model = PDE
-        fields = ('name', 'tagline', 'slug', 'thumbnail')
+        fields = ('created', 'modified', 'name', 'tagline', 'slug', 'thumbnail')

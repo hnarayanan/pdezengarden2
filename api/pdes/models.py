@@ -11,6 +11,9 @@ class PDE(TimeStampedModel):
     slug = models.SlugField(max_length=255)
     thumbnail = models.ImageField(upload_to='thumbnails/')
 
+    def thumbnail_url(self):
+        return 'http://localhost:8000' + self.thumbnail.url
+
     def __unicode__(self):
         return self.name
 
