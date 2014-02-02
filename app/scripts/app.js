@@ -4,7 +4,8 @@ angular.module('pdezengardenApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'pdeServices',
 ])
   .config(function ($routeProvider) {
     $routeProvider
