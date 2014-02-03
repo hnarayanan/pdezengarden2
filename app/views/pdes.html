@@ -1,5 +1,9 @@
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Curious about something specific?" ng-model="interest">
+</div>
+
 <div class="row">
-  <div ng-repeat="pde in pdes" class="col-sm-6 col-md-4">
+  <div ng-repeat="pde in pdes | filter:interest" class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <a href="#/pdes/{{ pde.id }}"><img ng-src="{{ pde.thumbnail }}" alt="{{ pde.name }}" class="img-responsive"></a>
       <div class="caption">

@@ -2,7 +2,7 @@
 
 angular.module('pdezengardenApp')
   .factory('Pdes', function ($resource) {
-      return $resource('http://localhost:8000/pdes/:pdeId', {}, {});
+      return $resource('http://localhost:8000/pdes/', {}, {});
     });
 
 angular.module('pdezengardenApp')
