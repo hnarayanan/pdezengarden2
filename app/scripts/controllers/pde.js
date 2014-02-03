@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('pdezengardenApp')
-  .controller('PdeCtrl', function($scope, $routeParams, $http) {
+  .controller('PdeCtrl', function($scope, $routeParams, Pde) {
 //      MathJax.Hub.Queue(['Typeset', MathJax.Hub]);
-      $http.get('data/pdes/' + $routeParams.pdeId + '.json').success(function(data) {
-          $scope.pde = data;
-        });
-    });
+      $scope.pde = Pde.get({pdeId: $routeParams.pdeId});
+   });

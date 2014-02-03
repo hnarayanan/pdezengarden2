@@ -9,4 +9,4 @@ class PDESerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = PDE
-        fields = ('created', 'modified', 'name', 'tagline', 'slug', 'thumbnail')
+        fields = ('created', 'modified', 'id', 'name', 'tagline', 'slug', 'thumbnail')
